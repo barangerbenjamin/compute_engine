@@ -192,3 +192,31 @@ By default, the connection will be block from the outside.
 Go back to [GCP](https://console.cloud.google.com/)
 
 Expand the menu on the top left and click on **Compute Engine --> VM Instances**
+
+Select your VM instance and click on **Set up Firewall Rules**
+
+![ce_9.PNG](ce_9.PNG)
+
+Click on **Create Firewall**
+
+![ce_10.PNG](ce_10.PNG)
+
+Change the name.
+
+Under **targets**, choose **Specified service account**
+
+Under **target service account**, choose your account.
+
+Under **Source filter** choose **Service account**
+
+Under **Protocols and ports**, choose **Allow all**
+
+Click on **Create**
+
+You can retrieve the public IP of your instance like so:
+
+![ce_11.PNG](ce_11.PNG)
+
+You can now open a new tab and access your app by using your IP:8501
+
+For the example it is `http:34.105.255.57:8501`
